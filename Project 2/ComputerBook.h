@@ -1,3 +1,6 @@
+#ifndef COMPUTERBOOK_H
+#define COMPUTERBOOK_H
+
 #include <iostream>
 #include "Book.h"
 
@@ -9,13 +12,12 @@ class ComputerBook : public Book{
     public:
         // Contsructors
         ComputerBook();
-        ComputerBook(string publisher);
+        ComputerBook(int code, string title, string publisher, int available, int rented);
 
         // Setters
         void setPublisher(string publisher);
 
         // Getters
         string getPublisher()const;
-
-        // Operators
 };
+#endif

@@ -1,3 +1,6 @@
+#ifndef CHILDRENBOOK_H
+#define CHILDRENBOOK_H
+
 #include <iostream>
 #include "Book.h"
 
@@ -9,11 +12,11 @@ class ChildrenBook : public Book{
     public:
         // Constructors
         ChildrenBook();
-        ChildrenBook(int age);
+        ChildrenBook(int code, string title, int age, int available, int rented);
 
         // Setters
         void setAge(int age);
-        
+            
         // Getters
         int getAge()const;
         
@@ -21,3 +24,4 @@ class ChildrenBook : public Book{
         
 
 };
+#endif

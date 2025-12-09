@@ -1,3 +1,6 @@
+#ifndef HISTORYBOOK_H
+#define HISTORYBOOK_H
+
 #include <iostream>
 #include "Book.h"
 
@@ -9,7 +12,7 @@ class HistoryBook : public Book {
     public: 
         // Constructors
         HistoryBook();
-        HistoryBook(string author);
+        HistoryBook(int code, string title, string author, int available, int rented);
 
         // Setters
         void setAuthor(string author);
@@ -19,3 +22,4 @@ class HistoryBook : public Book {
 
         // Operators
 };
+#endif

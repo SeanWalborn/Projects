@@ -1,3 +1,6 @@
+#ifndef NOVEL_H
+#define NOVEL_H
+
 #include <iostream>
 #include "Book.h"
 
@@ -9,14 +12,15 @@ class Novel : public Book {
     public: 
         // Constructors
         Novel();
-        Novel(int publishYear);
+        Novel(int code, string title, int publishYear, int available, int rented);
 
         // Setters
         void setPublishYear(int publishYear);
-
+            
         // Getters
         int getPublishYear()const;
 
         // Operators
 
 };
+#endif

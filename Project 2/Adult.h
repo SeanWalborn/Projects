@@ -1,3 +1,6 @@
+#ifndef ADULT_H
+#define ADULT_H 
+
 #include <iostream>
 #include "Person.h"
 
@@ -5,16 +8,18 @@ using namespace std;
 
 class Adult:public Person{
     private:
-        int code[4];
+        int* code;
     public:
-        // Constructors
+        // Constructors /destructors
         Adult();
-        Adult(int code);
+        Adult(int id, string name, int count, int* code);
+        ~Adult();
 
         // Setters
-        void setCode(int code);
+        void setCode(int* code);
                 
         // Getters
-        int getCode()const;
+        int* getCode()const;
 
 };
+#endif
