@@ -1,10 +1,3 @@
-/* 
-Project 1
-Name: Sean Walborn 
-ID: 10763229
-Submission Date: 10/26/25
-*/
-
 /*
     This project collects three files from the user. each file contains the class name, the number of students in the class, and the students information (ID, name, class grade)
     the program then presents the user with 5 options that repeat until the user picks option 5 at which point the program ends. the other four options manipulate the data in different ways based on the users selection.
@@ -521,6 +514,7 @@ void option5(bool &b, Student* s[]){
     }
 
 }
+
 
 
 
