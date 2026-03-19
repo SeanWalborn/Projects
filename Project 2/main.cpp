@@ -1,8 +1,5 @@
 /* 
-Project 1
-Name: Sean Walborn 
-ID: 10763229
-Submission Date: 12/05/25
+
 */
 
 #include <iostream>
